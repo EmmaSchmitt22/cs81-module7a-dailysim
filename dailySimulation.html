@@ -12,9 +12,13 @@
   <script>
     const output = document.getElementById("output");
 
+    function printActivity (){
+        output.innerHTML += `<p>${text}</p>`;
+    }
+    
     //Set Schedule
-    setTimeout(() => console.log("Wake up!"), 500);
-    setTimeout(() => console.log("Make a coffee!"), 2000);    
+    setTimeout(() => printActivity("Wake up!"), 500);
+    setTimeout(() => printActivity("Make a coffee!"), 2000);    
     
   </script>
 
